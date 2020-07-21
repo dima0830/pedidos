@@ -1,0 +1,711 @@
+body{
+  font-size:12px;
+  color: #606060;
+}
+a:link{
+  text-decoration: none;
+  color: #07A1C7;
+}
+ul, ol{
+  list-style: none;
+}
+.logo-l {
+  margin: 120px auto 40px;
+}
+.log{
+  margin: 0px;
+  text-align: center;
+}
+.logo {
+  margin: 10px;
+}
+.ab{
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.tar {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.boton-w {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+.bonton {
+display: inline-block;
+}
+.bonton-med{
+  border: 0;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+/*botones*/
+.azul{
+  background-color: #07A1C7;
+  color: #fff;
+}
+.azul:hover, .azul:focus {
+  background-color: #E5E5E5;
+  color: #353333;
+}
+.gris {
+  background-color: #E5E5E5;
+  color: #353333;
+}
+.gris:hover, .gris:focus {
+  background-color: #07A1C7;
+  color: #fff;
+}
+.gris-o{
+  background-color: #6F7680;
+  color: #fff !important;
+  margin: 0 15px;
+}
+.gris-o:hover, .gris-o:focus {
+  background-color: #07A1C7;
+  color: #fff !important;
+}
+.bor-azul{
+  border: 2px solid #07A1C7;
+  color: #07A1C7;
+  border-radius: 0;
+  background-color: #fff;
+}
+.bor-azul:hover, .bor-azul:focus{
+ background-color: #07A1C7;
+ color: #fff;
+}
+
+/* fin botones ===========*/
+.esp {
+  margin: 20px;
+  }/* espacio entre elementos*/
+  /* fin botones */
+  /* login */
+  .olv {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  /* FOOT 
+  .boot{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }*/
+  /* HEAD */
+  .hr-head{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  }
+  .b-name {
+    text-align: right;
+    color: #1CA8C9;
+    font-size: 18px;
+    padding: 25px 0 0;
+  }
+
+  /* header administración */
+  .hrcolor{
+   height: 1px;
+   border: 0;
+   color: #666;
+   background-color: #001278;
+   margin: -15px 0 0;
+   padding: 0;
+ }
+ .menu{
+  background-color: #E5E5E5;
+  margin: 5px;
+  padding: 0px;
+  color: #071689;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu_bar2 {
+  color: #fff;
+  font-size: 30px;
+  display:none;
+}
+header {
+  width: 100%;
+}
+
+header nav {
+  z-index:1000;
+  margin:0px auto;
+}
+
+header nav ul {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display:inline-block;
+  position: relative;
+  margin: 0;
+}
+
+header nav ul li:hover {
+  background:#ddd;
+}
+.line {
+  border-right: none;
+}
+header nav ul li a {
+  color: #001278 !important;
+  font-size: 14px;
+  text-decoration: none !important;
+  background: #E5E5E5;
+  padding: 0 15px;
+  border-right: 1px solid #1DA8D1;
+}
+.grand{
+  font-size: 18px;
+  border: none;
+}
+.grand:hover{
+  color: #001278;
+  font-size: 18px;
+}
+.flt {
+  display: block;
+  float: right;
+  margin: 0 10px;
+}
+
+header nav ul li a i{
+ display: none !important;
+}
+
+header nav ul li:hover .children {
+  display:block;
+}
+
+header nav ul li .children {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index:1000;
+}
+
+header nav ul li .children li {
+  display:block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+  display: block;
+  border:none;
+  padding: 5px 10px;
+}
+
+header nav ul li .children li a span {
+  float: right;
+  position: relative;
+  top:3px;
+  margin-right:0;
+  margin-left:10px;
+}
+
+header nav ul li .caret {
+  position: relative;
+  top:3px;
+  margin-left:10px;
+  margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+  .b-name {
+    text-align: left;
+    padding: 15px 0 0 15px;
+  }
+  .logo {
+    margin: 15px auto 5px;
+    display: block;
+  }
+
+  .menu_bar2 {
+    display:block;
+    width:100%;
+    position: relative;
+    background:#E5E5E5;
+  }
+  .menu_bar2 .bt-menu {
+    display: block;
+    color: #001278;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; 
+  }
+  .menu_bar2 i {
+    display: block;
+    float: right;
+    font-size: 16px;
+    color: #001278;
+    margin: 3px 0 0 0;
+  }
+  .grand {
+    display: none;
+  }
+  header nav {
+    background-color: #fff;
+    width: 80%;
+    height: calc(100% - 80px);
+    position: absolute;
+    right:100%;
+    margin: 0;
+    overflow: scroll;
+  }
+  header nav ul li {
+    display: block;
+    border-bottom:1px solid rgba(255,255,255,.5);
+  }
+  header nav ul li a {
+    display: block;
+    border: none;
+    color: #444444 !important; 
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+  header nav ul li a i{
+   display: inline-block !important;
+ }
+ .flt {
+  display: block;
+  float: inherit;
+}
+header nav ul li:hover .children {
+  display: none;
+}
+
+header nav ul li .children {
+  width: 100%;
+  position: relative;
+}
+
+header nav ul li .children li a {
+  margin-left:20px;
+  font-size: 11px;
+  color: #001278 !important;
+}
+
+header nav ul li .caret {
+  float: right;
+}
+}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1340px){}
+/* general */
+.titulo {
+  color: #6F7680;
+  font-size: 18px;
+  font-weight: normal;
+  margin:30px 0;
+  display: block;
+}
+.titulo2 {
+  color: #6F7680;
+  font-size: 18px;
+  font-weight: normal;
+  margin:20px 0 25px;
+  display: block;
+}
+.box{
+  margin-top: 30px;
+}
+.box-list {
+  background-color: #F4F4F4;
+  padding: 10px 30px 20px;
+}
+.box-list li{
+  font-size: 16px;
+  margin:10px auto;
+}
+.m-titu {
+  background-color: #02A0C5;
+  width: 80%;
+  display: block;
+  margin: -20px auto;
+  color: #fff;
+  text-align: center;
+}
+.modal-content {
+  border-radius: 0;
+}
+
+.switch2 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+  float: right;
+}
+
+.switch2 input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.form-b {
+  padding: 35px 20px 0px;
+}
+.form-b label {
+  font-size: 16px;
+  font-weight: normal;
+  color: #646464;
+  margin-right: 5px;
+}
+.form-cli  {
+  padding: 35px 10px 0px;
+}
+.form-cli label{
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: #646464;
+  margin-right: 5px;
+}
+
+.bloq {
+ margin-top: 20px;
+}
+.text-int {
+  font-size: 14px;
+}
+
+.stylish-input-group .input-group-addon{
+  background: white !important; 
+}
+.stylish-input-group .form-control{
+  border-right:0; 
+  box-shadow:0 0 0; 
+  border-color:#ccc;
+}
+.stylish-input-group button{
+  border:0;
+  background:transparent;
+}
+
+/*tablas */
+.inpu-ta{
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+table thead{
+  border-top: 1px solid #E6E6E6;
+}
+table thead th{
+  font-size: 14px;
+  color: #646464;
+} 
+
+  @media
+  only screen 
+  and (max-width: 760px), (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { 
+    border: 1px solid #001278; 
+    margin-bottom: 3px;
+  }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-right: 8px;
+    text-align: right; 
+
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  /* tabla adm-prod==*/
+    .tb1 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb1 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb1 td:nth-of-type(3):before { content: "Categoría"; }
+    .tb1 td:nth-of-type(4):before { content: "Subcategoría"; }
+    .tb1 td:nth-of-type(5):before { content: "Descripción"; }
+    .tb1 td:nth-of-type(6):before { content: "Color"; }
+    .tb1 td:nth-of-type(7):before { content: "Talla"; }
+    .tb1 td:nth-of-type(8):before { content: "IVA"; }
+    .tb1 td:nth-of-type(9):before { content: "U. Medida"; }
+    .tb1 td:nth-of-type(10):before { content: "Costo"; }
+
+
+   /* tabla adm-list==*/
+    .tb2 td:nth-of-type(1):before { content: "Código lista"; }
+    .tb2 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb2 td:nth-of-type(3):before { content: "Descripción"; }
+    .tb2 td:nth-of-type(4):before { content: "Color"; }
+    .tb2 td:nth-of-type(5):before { content: "Talla"; }
+    .tb2 td:nth-of-type(6):before { content: "Precio"; }
+
+    /* tabla adm-desc==*/
+    .tb3 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb3 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb3 td:nth-of-type(3):before { content: "Descuento max"; }
+    .tb3 td:nth-of-type(4):before { content: "Fecha Inicio"; }
+    .tb3 td:nth-of-type(5):before { content: "Fecha final"; }
+
+    /* tabla adm-desc==*/
+    .tb4 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb4 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb4 td:nth-of-type(3):before { content: "Descripción"; }
+    .tb4 td:nth-of-type(4):before { content: "UM"; }
+    .tb4 td:nth-of-type(5):before { content: "Color"; }
+    .tb4 td:nth-of-type(6):before { content: "Talla"; }
+    .tb4 td:nth-of-type(7):before { content: "Precio"; }
+    .tb4 td:nth-of-type(8):before { content: "%Dcto Unit."; }
+    .tb4 td:nth-of-type(9):before { content: "Cantidad"; }
+    .tb4 td:nth-of-type(10):before { content: "%Dcto."; }
+    .tb4 td:nth-of-type(11):before { content: "Total"; }
+    .tb4 td:nth-of-type(12):before { content: ""; }
+
+    /* tabla adm-desc==*/
+    .tb5 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb5 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb5 td:nth-of-type(3):before { content: "Descripción"; }
+    .tb5 td:nth-of-type(4):before { content: "UM"; }
+    .tb5 td:nth-of-type(5):before { content: "Color"; }
+    .tb5 td:nth-of-type(6):before { content: "Talla"; }
+    .tb5 td:nth-of-type(7):before { content: "Precio"; }
+    .tb5 td:nth-of-type(8):before { content: "%Dcto Unit."; }
+    .tb5 td:nth-of-type(9):before { content: "Cantidad"; }
+    .tb5 td:nth-of-type(10):before { content: "%Dcto."; }
+    .tb5 td:nth-of-type(11):before { content: "Total"; }
+
+    .tb6 td:nth-of-type(1):before { content: "Fecha"; }
+    .tb6 td:nth-of-type(2):before { content: "Pedido"; }
+    .tb6 td:nth-of-type(3):before { content: "Razón social"; }
+    .tb6 td:nth-of-type(4):before { content: "Nit"; }
+    .tb6 td:nth-of-type(5):before { content: "T. Pedido"; }
+    .tb6 td:nth-of-type(6):before { content: ""; }
+
+   /* tabla adm-desc==*/
+    .tb7 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb7 td:nth-of-type(2):before { content: "Código de barras"; }
+    .tb7 td:nth-of-type(3):before { content: "Descripción"; }
+    .tb7 td:nth-of-type(4):before { content: "UM"; }
+    .tb7 td:nth-of-type(5):before { content: "Color"; }
+    .tb7 td:nth-of-type(6):before { content: "Talla"; }
+    .tb7 td:nth-of-type(7):before { content: "Precio"; }
+    .tb7 td:nth-of-type(8):before { content: "Lista"; }
+    .tb7 td:nth-of-type(9):before { content: "Cantidad"; }
+    .tb7 td:nth-of-type(10):before { content: "%Dcto."; }
+    .tb7 td:nth-of-type(11):before { content: "Total"; }
+
+     /* tabla adm-desc==*/
+    .tb8 td:nth-of-type(1):before { content: "Referencia"; }
+    .tb8 td:nth-of-type(2):before { content: "Descripción"; }
+    .tb8 td:nth-of-type(3):before { content: "UM"; }
+    .tb8 td:nth-of-type(4):before { content: "Color"; }
+    .tb8 td:nth-of-type(5):before { content: "Talla"; }
+    .tb8 td:nth-of-type(6):before { content: "Vr. Unit"; }
+    .tb8 td:nth-of-type(7):before { content: "Lista"; }
+    .tb8 td:nth-of-type(8):before { content: "Cantidad"; }
+    .tb8 td:nth-of-type(9):before { content: "%Dcto."; }
+    .tb8 td:nth-of-type(10):before { content: "Total"; }
+    .tb8 td:nth-of-type(11):before { content: "Tot. Gp"; }
+    .tb8 td:nth-of-type(12):before { content: "%Gp"; }
+    .tb8 td:nth-of-type(13):before { content: "%Dcto"; }
+    .tb8 td:nth-of-type(14):before { content: "T. Desc"; }
+    .tb8 td:nth-of-type(15):before { content: "Gp"; }
+    .tb8 td:nth-of-type(16):before { content: "%Gp"; }
+
+    .tb9 td:nth-of-type(1):before { content: "Fecha"; }
+    .tb9 td:nth-of-type(2):before { content: "P. Interno"; }
+    .tb9 td:nth-of-type(3):before { content: "P. Siesa"; }
+    .tb9 td:nth-of-type(4):before { content: "Razón social"; }
+    .tb9 td:nth-of-type(5):before { content: "Nit"; }
+    .tb9 td:nth-of-type(6):before { content: "T. Pedido"; }
+    .tb9 td:nth-of-type(7):before { content: "Estado"; }
+    .tb9 td:nth-of-type(8):before { content: ""; }
+
+  }
+
+.rojo {
+  color: red;
+}
+.verde{
+  color:green;
+}
+  /* Pedidos */
+  .ques{
+    padding: 0;
+  }
+  .ques i{
+    color: #E0E0E0;
+    margin: 8px 4px 0;
+    font-size: 18px;
+  }
+  .lbl{
+    font-size: 16px;
+    color: #5E5E5E;
+    margin: 8px 0 0 0;
+  }
+  .lbl2{
+    font-size: 15px;
+    color: #5E5E5E;
+    margin: 8px 0 0 0;
+  }
+  .espc2 {
+    margin: 20px 0 0 0;
+  }
+  .box-pedidos{
+    background-color: #F2F2F2;
+    padding: 5px 20px 20px;
+  }
+  .box-pedidos p{
+    color: #606060;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .tip-t {
+    font-size: 14px;
+    color: #606060;
+    font-weight: bold;
+  }
+  .list-pedid, .list-ca {
+    margin:20px 0;
+    padding: 0;
+  }
+  .list-pedid  li{
+    font-size: 14px;
+  }
+  .list-pedid  li strong{
+    margin:  5px 10px;
+    display: inline-block;
+  }
+  .tex-up{
+    margin: 40px 5px;
+    font-size: 14px;
+  }
+  .espc3 {
+    margin: 5px 0 0 0;
+  }
+ .lisPN {
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+  margin: 5px 0;
+ }
+ .lisP{
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+  margin: 5px 0;
+ }
+ .pazul {
+  color: #001589;
+ }
+ .mensaj{
+  background-color: #D4EDDA;
+ }
+ .p-verde {
+  color: #165527;
+  padding: 20px;
+  font-size: 18px;
+ }
+ .cent {
+  display: block;
+  width:20%;
+  margin: 0 auto;
+ }
+ .subti{
+  color: #001589;
+  font-size: 14px;
+ }
+ 
