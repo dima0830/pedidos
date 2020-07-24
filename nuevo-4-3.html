@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -39,6 +40,7 @@
        </div>
 <hr class="hr-head">
 
+
 <hr class="hrcolor">
 <nav class="navbar navbar-expand-md navbar-light bg-light btco-hover-menu">
   <div class="container"><a class="navbar-brand">:: Pedidos ::</a>
@@ -55,7 +57,7 @@
             <a href="nuevo-1.html" class="dropdown-item">Cargar</a>
           </li>
           <li>
-            <a href="nuevo-6-html" class="dropdown-item">Estado de pedidos</a>
+            <a href="nuevo-6.html" class="dropdown-item">Estado de pedidos</a>
           </li>
         </ul>
       </li>
@@ -74,7 +76,8 @@
   <a href="nuevo-6.html"  class="volv"><i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp;Volver</a>
   <br>
   <h1 class="titulo">
-    <strong>Ordenes de Compra Por subir ERP</strong>
+    #OC SIESA OCN-0001
+    <br><strong>Ordenes de compra por subir ERP</strong>
   </h1>
   <br>
   <div class="box">
@@ -88,26 +91,30 @@
             <th>Ext1</th>
             <th>Ext2</th>
             <th>Cantidad OC</th>
-            <th>Precio</th>
             <th>Cantidad OD</th>
+            <th>Cantidad Recibida</th>
+            <th>Diferencia cantidad</th>
             <th>Precio</th>
-            <th>Lote</th>
+            <th># Lote</th>
             <th>F. Venc</th>
+            <th>Detalle</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="alert-success">
+          <tr class="alert-info">
             <td>7707066063033</td>
             <td>10106303</td>
             <td>Lorem ipsum dolor sit amet</td>
             <td>Color</td>
             <td>Talla</td>
             <td>52</td>
+            <td>52</td>
+            <td>20</td>
+            <td>32</td>
             <td>$10.000</td>
-            <td>Cantidad OD</td>
-            <td>$10.000</td>
-            <td>27</td>
-            <td>$5.000</td>
+            <td>12345678</td>
+            <td>27/07/20</td>
+            <td>Existe</td>
           </tr>
           <tr class="alert-info">
             <td>7707066063033</td>
@@ -116,24 +123,58 @@
             <td>Color</td>
             <td>Talla</td>
             <td>52</td>
+            <td>52</td>
+            <td>20</td>
+            <td>32</td>
             <td>$10.000</td>
-            <td>Cantidad OD</td>
-            <td>$10.000</td>
-            <td>27</td>
-            <td>$5.000</td>
+            <td>12345678</td>
+            <td>27/07/20</td>
+            <td>Existe</td>
           </tr>
           <tr class="alert-danger">
+           <td>7707066063033</td>
+            <td>10106303</td>
+            <td>Lorem ipsum dolor sit amet</td>
+            <td>Color</td>
+            <td>Talla</td>
+            <td>52</td>
+            <td>52</td>
+            <td>20</td>
+            <td>32</td>
+            <td>$10.000</td>
+            <td>12345678</td>
+            <td>27/07/20</td>
+            <td>Existe</td>
+          </tr>
+          <tr class="alert-info">
             <td>7707066063033</td>
             <td>10106303</td>
             <td>Lorem ipsum dolor sit amet</td>
             <td>Color</td>
             <td>Talla</td>
             <td>52</td>
-            <td>$10.000</td>
-            <td>Cantidad OD</td>
-            <td>$10.000</td>
-            <td>27</td>
-            <td>$5.000</td>
+            <td>52</td>
+            <td>20</td>
+            <td>32</td>
+            <td>$0</td>
+            <td>12345678</td>
+            <td>27/07/20</td>
+            <td>Existe</td>
+          </tr>
+          <tr class="alert-danger">
+           <td>7707066063033</td>
+            <td>10106303</td>
+            <td>Lorem ipsum dolor sit amet</td>
+            <td>Color</td>
+            <td>Talla</td>
+            <td>52</td>
+            <td>52</td>
+            <td>20</td>
+            <td>32</td>
+            <td>$0</td>
+            <td>12345678</td>
+            <td>27/07/20</td>
+            <td>No Existe</td>
           </tr>
         </tbody>
       </table>
@@ -142,6 +183,10 @@
           <i class="fa fa-arrow-down" aria-hidden="true"></i>
           Descargar excel
         </button>
+        <button type="button" class="btn btn-success btn-sm">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+         Descargar archivo Lotes
+        </button>
       </div>
 
     </div>
@@ -149,6 +194,7 @@
 
 
 </div> <!-- fin container-->
+
 
 <br><br>
 <div class="boot">
@@ -375,6 +421,5 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
 
 
