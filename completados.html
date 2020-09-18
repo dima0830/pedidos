@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Pedidos Ortopedicos Futuro</title>
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="index.html">
+        <img src="assets/img/logo-.png" class="logo img-responsive"></a>
+      </div>
+      <div class="col-sm-9">
+            <!-- Bienvenido:
+             <span style="color: #6B7782;">Andres</span>-->
+           </div>
+         </div>
+       </div>
+       <hr class="hr-head">
+       <hr class="hrcolor">
+       <header>
+        <div class="menu_bar">
+          <a href="#" class="bt-menu"><i class="fas fa-bars"></i>Menú</a>
+        </div>
+        <nav>
+          <div class="container">
+           <div class="row" style="margin: 0;">
+            <div class="col-md-6">
+              <span class="pedidos">:: Pedidos ::</span>
+            </div>
+            <div class="col-md-6">
+              <ul >
+                <li><a href="https://ortopedicosfuturo.com/employee/orders">Inicio</a></li>
+                <li class="submenu">
+                  <a href="#">Pedidos <i class="fas fa-caret-down"></i></a>
+                  <ul class="children">
+                    <li><a href="index.html">Cargar</a></li>
+                    <li><a href="estado-pedidos.html">Estado de pedidos</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://ortopedicosfuturo.com/employee/orders/user-manual/200513134011">Manual De Usuario</a></li>
+                <li><a href="https://ortopedicosfuturo.com/employee/logout">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header><!-- menu ======================-->
+    <div class="container">
+      <ul class="box-list-pedido">
+        <li>
+          <a  href="estado-pedidos.html" class="btn btn-pedidos btn-sm">
+          PX Enviar - 5</a>
+        </li>
+        <li>
+          <a href="pendientes.html" class="btn btn-pedidos btn-sm">
+          Pend X OD - 8</a>
+        </li>
+        <li>
+          <a href="od.html" class="btn btn-pedidos btn-sm">
+          OD cargada - 1</a>
+        </li>
+        <li>
+          <a href="Remisionado.html" class= "btn btn-pedidos btn-sm">
+          Remisionado - 5</a>
+        </li>
+        <li>
+          <a href="cargar-e.html" class="btn btn-pedidos btn-sm">
+          Cargar entrada - 5</a>
+        </li>
+        <li>
+          <a href="ingresada.html" class="btn btn-pedidos btn-sm ">
+          Ingresada Pos - 6</a>
+        </li>
+        <li>
+          <a href="ingresada-erp.html" class="btn btn-pedidos btn-sm ">
+           Ingresada ERP
+         </a>
+       </li>
+       <li>
+        <a href="completados.html" class="btn btn-pedidos btn-sm active">
+        Completados - 6</a>
+      </li>
+      <li>
+        <a href="bonificados.html" class="btn btn-pedidos btn-sm">
+          Bonificados-20
+        </a>
+      </li>
+      <li>
+        <a href="cerradas.html" class="btn btn-pedidos btn-sm">
+          Cerradas
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <h1 class="titulo">
+     <strong>Ordenes de Compra Completadas</strong>
+   </h1>
+   <form class="form-princ">
+    <div class="form-group row box">
+      <label class="col-sm-1 col-form-label" >Tienda:</label>
+      <div class="col-sm-5">
+        <select class="custom-select">
+          <option value=""> -- Buscar por Tienda --</option>
+        </select>
+      </div>
+      <label class="col-sm-2 col-form-label" style="text-align: right;" >Fecha:</label>
+      <div class="col-sm-2">
+        <div class="input-group">
+          <input name="fecha" type="date" class="form-control" placeholder="Desde">
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="input-group">
+          <input name="fecha" type="date" class="form-control" placeholder="Hasta">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row box">
+      <label class="col-sm-1 col-form-label" >Proveedor:</label>
+      <div class="col-sm-5">
+        <select class="custom-select">
+          <option value=""> -- Buscar por Proveedor --</option>
+        </select>
+      </div>
+      <label class="col-sm-2 col-form-label" style="text-align: right;"> #OC SIESA:</label>
+      <div class="col-sm-3">
+        <input type="text"class="form-control" value="">
+      </div>
+      <div class="col-sm-1">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </form>
+  <br>
+  <div class="box">
+    <h1 class="titulo">Listados de ordenes de compra</h1>
+    <div class="table-responsive py-5">
+      <table class="table table-bordered table-striped table-sm">
+        <thead>
+         <tr>
+          <th>#OC SIESA</th>
+          <th>Tienda</th>
+          <th>Proveedor</th>
+          <th>Cantidad Total OC</th>
+          <th>No. Ajuste por compra</th>
+          <th>Cantidad Total RMPD</th>
+          <th>Acción</th>
+          <th>Inactivar</th>
+          <th>Procesar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button type="button" class="btn-link" style="border: none;" data-toggle="modal" data-target="#complesiesa01">
+              101
+            </button>
+            <div class="modal fade" id="complesiesa01" tabindex="-1" role="dialog" aria-labelledby="complesiesa01Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" >#OC SIESA  <strong>102</strong></h5> 
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped templ sticky-header">
+                        <thead>
+                          <tr>
+                            <th>Código de barra</th>
+                            <th>Referencia</th>
+                            <th>Descripción</th>
+                            <th>Ext1</th>
+                            <th>Ext2</th>
+                            <th>Cantidad Recibida</th>
+                            <th>Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>7707066063033</td>
+                            <td>101063</td>
+                            <td style="width: 40%;">Descripción del producto Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                            <td>Color</td>
+                            <td>Talla</td>
+                            <td>435</td>
+                            <td>Solo para casos que aplique</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>AES LAGO</td>
+          <td>AXA</td>
+          <td>355 Unidades</td>
+          <td>336655</td>
+          <td>355 Unidades</td>
+          <td>
+          <a href="detalles-completados.html" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i>&nbsp; Detalle</a>
+          </td>
+          <td>
+           <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#confir1793">
+             <i class="fa fa-trash" aria-hidden="true"></i> 
+           </button>
+         </td>
+         <td>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="comple-Check1">
+    <label class="form-check-label" for="comple-Check1">
+    </label>
+  </div>
+</td>
+       </tr>
+  </tbody>
+</table>
+</div>
+<div class="row">
+  <div class="col align-self-end text-right">
+    <button type="submit" class="btn btn-primary btn-sm">Procesar</button>
+  </div>
+</div>
+<br><br>
+</div><!-- Fin box ============-->
+</div><!-- fin container ==============-->
+<hr>
+<p class="text-center">www.ortopedicosfuturo.com</p>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
